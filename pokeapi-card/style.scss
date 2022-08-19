@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+:root {
+  --lava-red:#dd1716;
+  --butterfly-blue:#3ea2fe;
+  --dune:#333;
+  --apple-green:#76CC26;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h2, button{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: -webkit-gradient(linear, left top, right top, from(var(--lava-red)), to(var(--butterfly-blue)));
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon{
+    width: 75%;
+    background-color: white;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+    img{
+        width: 500px;  
+    }
+    h2{
+        color: var(--dune);
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .progress{
+        background-color: var(--dune);
+        border-radius: 25px;
+        height: 30px;
+    }
+    .progress span{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        background: linear-gradient(90deg, yellow, purple, blue);
+    }
+    button{
+        width: 150px;
+        margin: 20px 0;
+        padding: 10px;
+        cursor: pointer;
+        background-color:white ;
+        color: black;
+        border: none;
+        border-radius: 10px; 
+        font-size: 18px;
+        box-shadow: 1px 5px 15px var(--butterfly-blue);
+        &:hover{
+            box-shadow: 1px 5px 15px var(--lava-red);
+        }
+    }
+}
+
+#card{
+    position: relative;
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    img {
+        display: block;
+        width: 180px;
+        max-height: 200px;
+        position: relative;
+        margin: 20px auto;
+      }
+  }
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+  }
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
